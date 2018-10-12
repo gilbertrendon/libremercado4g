@@ -55,8 +55,8 @@ class App extends Component {
             handleChange={this.handleInputChange}
             value={this.state.value}
           />
-           <li><a href="https://home.mercadolibre.com.co/categories"><i class="nav-icon-categories-mobile"></i><p>Categorías</p></a></li>
         </header>
+        <div><a href="https://home.mercadolibre.com.co/categories"><i class="nav-icon-categories-mobile"></i><p>Categorías</p></a></div>
         <div className="App-list">
           <List list={this.state.data} >
          
