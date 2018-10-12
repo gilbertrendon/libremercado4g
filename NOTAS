@@ -1,0 +1,2 @@
+ docker build -t mercadolibre-master .
+NO DA ESTE COMANDO
