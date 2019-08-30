@@ -14,7 +14,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
-// optional cofiguration para alert
+// optional cofiguration para alert(alerta cambia local y en heroku)
 const options = {
     position: 'bottom center',
     timeout: 5000,
