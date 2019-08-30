@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Bienvenido a miniMercadolibre</h1>
+          <h1>Bienvenido a mi mercado libre</h1>
           <Search
             setRef={this.setInputRef}
             handleSubmit={this.handleSubmit}
