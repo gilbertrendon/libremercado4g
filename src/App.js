@@ -39,8 +39,20 @@ class App extends Component {
 
   async searchItems() {
     const url = URL_SEARCH
-    const resultList = await axios.get(`${url}?q=${this.state.value}&limit=${this.state.limit}`)
-    this.setState({ data: resultList.data.results })
+    //const resultList = await axios.get(`${url}?q=${this.state.value}&limit=${this.state.limit}`)
+    //Este listado se obtenía incialmente es esta aplicación de un api de mercadolibre
+    //Para obtener el json de el proyecto asociado a un usuario
+    //localhost:3333/projects y se ponía dentro del get
+    //localhost:3333/projects
+    //Ahora se obtiene lo siguiente 
+     const resultList = await axios.get("http://localhost:3333"
+    , {
+      headers: {
+        'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExLCJpYXQiOjE2MTU0OTg1OTl9.XaAKBoAwOsWv0sZe8DJqr-PI96HjdCDsIo7Rz2utTMQ`
+      }
+    })
+    //this.setState({ data: resultList.data.results })
+    console.log("YA VIENE EL LISTADO");
     console.log(this.state.data)
   }
 
@@ -56,7 +68,7 @@ class App extends Component {
             value={this.state.value}
           />
         </header>
-        <div><a href="https://home.mercadolibre.com.co/categories"><i class="nav-icon-categories-mobile"></i><p>Categorías</p></a></div>
+        <div><a href="https://home.mercadolibre.com.co/categories"><i className="nav-icon-categories-mobile"></i><p>Categorías</p></a></div>
         <div className="App-list">
           <List list={this.state.data} >
          
