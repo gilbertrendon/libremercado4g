@@ -17,7 +17,86 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return { 
+      "cod": "200",
+      "message": 0.0025,
+      "cnt": 40,
+      "list": [
+          {
+          "dt": 1503586800,
+              "main": {
+                  "temp": 307.92,
+                  "temp_min": 307.92,
+                  "temp_max": 308.292,
+                  "pressure": 956.05,
+                  "sea_level": 1026.51,
+                  "grnd_level": 956.05,
+                  "humidity": 19,
+                  "temp_kf": -0.37
+              },
+              "weather": [
+                  {
+                      "id": 800,
+                      "main": "Clear",
+                      "description": "clear sky",
+                      "icon": "01d"
+                  }
+              ],
+              "clouds": {
+                  "all": 0
+              },
+              "wind": {
+                  "speed": 6.57,
+                  "deg": 232.003
+              },
+              "sys": {
+                  "pod": "d"
+              },
+              "dt_txt": "2017-08-24 15:00:00"
+          },
+          {
+              "dt": 1503597600,
+              "main": {
+                  "temp": 305.14,
+                  "temp_min": 305.14,
+                  "temp_max": 305.416,
+                  "pressure": 956.03,
+                  "sea_level": 1026.69,
+                  "grnd_level": 956.03,
+                  "humidity": 17,
+                  "temp_kf": -0.28
+              },
+              "weather": [
+                  {
+                      "id": 800,
+                      "main": "Clear",
+                      "description": "clear sky",
+                      "icon": "01d"
+                  }
+              ],
+              "clouds": {
+                  "all": 0
+              },
+              "wind": {
+                  "speed": 5.57,
+                  "deg": 246
+              },
+              "sys": {
+                  "pod": "d"
+              },
+              "dt_txt": "2017-08-24 18:00:00"
+          }
+      ],
+      "city": {
+          "id": 3117735,
+          "name": "Madrid",
+          "coord": {
+              "lat": 40.4165,
+              "lon": -3.7026
+          },
+          "country": "ES"
+      }
+  }
 })
 
 // Route.get('/users', () => {

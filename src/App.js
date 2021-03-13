@@ -50,8 +50,10 @@ class App extends Component {
       headers: {
         'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExLCJpYXQiOjE2MTU0OTg1OTl9.XaAKBoAwOsWv0sZe8DJqr-PI96HjdCDsIo7Rz2utTMQ`
       }
-    })
-    //this.setState({ data: resultList.data.results })
+    }
+    )
+     //resultList.data.results 
+    this.setState({ data: resultList.data})
     console.log("YA VIENE EL LISTADO");
     console.log(this.state.data)
   }
