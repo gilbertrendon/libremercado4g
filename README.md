@@ -1,3 +1,5 @@
+PreNotas PERSONALES: npm run start ó npm start para ejecutar la app en el localhost.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
